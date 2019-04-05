@@ -18,18 +18,13 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Votre todolist</h1>
+    <h1>Créer une tâche</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>
-            tâche 1
-        </li>
-        <li>
-            tâche 2
-        </li>
-    </ul>
-    <a href="{{ path('create_task') }}">Ajouter un tâche</a>
-    <a href="{{ path('index') }}">Page d'accueil</a>
+    Formulaire de création de tâche
+    {{ form_start(taskForm) }}
+    {{ form_errors(taskForm) }}
+    {{ form_widget(taskForm) }}
+    <input type="submit" value="Ajouter la tâche">
+    {{ form_end(taskForm) }}
 </div>
 {% endblock %}
