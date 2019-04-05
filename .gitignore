@@ -1,4 +1,6 @@
 ###> Added by Jeremie ###
+# Symfony
+.env
 # VSCode
 /.vscode
 # macOS
