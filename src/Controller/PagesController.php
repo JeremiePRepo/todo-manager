@@ -16,4 +16,12 @@ class PagesController extends AbstractController
             'controller_name' => 'PagesController',
         ]);
     }
+
+    /**
+     * @Route("/todolist", name="todolist")
+     */
+    public function todolist()
+    {
+        return $this->render('pages/todolist.html.twig');
+    }
 }
